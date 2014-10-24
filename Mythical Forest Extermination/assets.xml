@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets PGFVersion="0.19" GSCVersion="0.10.0">
+  <sounds />
+  <images>
+    <image name="Mythical">
+      <file name="Mythical.png" size="2367" />
+    </image>
+  </images>
+  <behaviors />
+</assets>
