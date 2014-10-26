@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<game GSCVersion="0.10.0" PGFVersion="0.19" title="My Great Project">
+<game GSCVersion="0.10.5" PGFVersion="0.19" title="Mythical Forest Extermination">
   <tags />
   <resolutionIndependence>0</resolutionIndependence>
   <instructions>Add game instructions here.</instructions>
-  <resolution>0</resolution>
+  <resolution>2</resolution>
   <longDescription>A simple game.</longDescription>
   <prototypes>
-    <actor id="id857968" />
+    <actor id="id472758" />
+    <actor id="id104912" />
+    <actor id="id892396" />
+    <actor id="id387436" />
+    <actor id="id849159" />
+    <actor id="id302196" />
   </prototypes>
   <plugins />
   <scenes>
-    <scene id="id468331" />
+    <scene id="id639111" />
   </scenes>
   <attributes>
     <text id="name">default name</text>
     <real id="time">0</real>
     <size id="displaySize">
-      <real id="width">480</real>
-      <real id="height">320</real>
+      <real id="width">720</real>
+      <real id="height">480</real>
     </size>
     <text id="actorTags" />
   </attributes>

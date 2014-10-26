@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<assets PGFVersion="0.19" GSCVersion="0.10.0">
+<assets PGFVersion="0.19" GSCVersion="0.10.5">
   <sounds />
   <images>
+    <image name="Title Background">
+      <file name="Title Background.png" size="3256" />
+    </image>
     <image name="Mythical">
-      <file name="Mythical.png" size="2367" />
+      <file name="Mythical.png" size="1505" />
+    </image>
+    <image name="Forest">
+      <file name="Forest.png" size="1299" />
+    </image>
+    <image name="Extermination">
+      <file name="Extermination.png" size="1605" />
     </image>
   </images>
   <behaviors />
