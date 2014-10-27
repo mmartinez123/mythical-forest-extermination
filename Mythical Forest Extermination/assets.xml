@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<assets PGFVersion="0.19" GSCVersion="0.10.5">
+<assets PGFVersion="0.19" GSCVersion="0.10.0">
   <sounds />
   <images>
     <image name="Title Background">
@@ -13,6 +13,21 @@
     </image>
     <image name="Extermination">
       <file name="Extermination.png" size="1605" />
+    </image>
+    <image name="Play Button">
+      <file name="Play Button.png" size="1118" />
+    </image>
+    <image name="Instructions">
+      <file name="Instructions.png" size="1434" />
+    </image>
+    <image name="Instructions Title">
+      <file name="Instructions Title.png" size="1358" />
+    </image>
+    <image name="Instructions Stuff">
+      <file name="Instructions Stuff.png" size="12310" />
+    </image>
+    <image name="Back Button">
+      <file name="Back Button.png" size="1133" />
     </image>
   </images>
   <behaviors />

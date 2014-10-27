@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene PGFVersion="0.19" GSCVersion="0.10.0" id="id310108">
+  <layers>
+    <layer id="id276340">
+      <actors>
+        <actor id="id240323" prototype="id562799">
+          <attributes>
+            <point id="position">
+              <real id="x">360</real>
+              <real id="y">240</real>
+            </point>
+            <size id="size">
+              <real id="width">721</real>
+              <real id="height">482</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id830749" prototype="id241706">
+          <attributes>
+            <point id="position">
+              <real id="x">356</real>
+              <real id="y">424</real>
+            </point>
+            <size id="size">
+              <real id="width">640</real>
+              <real id="height">100</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id914760" prototype="id983820">
+          <attributes>
+            <point id="position">
+              <real id="x">360</real>
+              <real id="y">216</real>
+            </point>
+            <size id="size">
+              <real id="width">340</real>
+              <real id="height">340</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id129576" prototype="id907878">
+          <attributes>
+            <point id="position">
+              <real id="x">118.5</real>
+              <real id="y">85.5251141552512</real>
+            </point>
+            <size id="size">
+              <real id="width">151</real>
+              <real id="height">68.9497716894976</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+      </actors>
+      <attributes>
+        <text id="name">Background</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+  </layers>
+  <attributes>
+    <text id="name">Instructions Scene</text>
+    <real id="time">0</real>
+    <size id="size">
+      <real id="width">720</real>
+      <real id="height">480</real>
+    </size>
+    <boolean id="wrapX">false</boolean>
+    <boolean id="wrapY">false</boolean>
+    <point id="gravity">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <color id="color">
+      <real id="red">0</real>
+      <real id="green">0</real>
+      <real id="blue">0</real>
+      <real id="alpha">1</real>
+    </color>
+    <rect id="camera">
+      <point id="origin">
+        <real id="x">0</real>
+        <real id="y">0</real>
+      </point>
+      <size id="size">
+        <real id="width">720</real>
+        <real id="height">480</real>
+      </size>
+      <size id="trackingArea">
+        <real id="width">640</real>
+        <real id="height">420</real>
+      </size>
+      <real id="rotation">0</real>
+    </rect>
+    <attributes id="autorotate">
+      <boolean id="landscapeLeft">true</boolean>
+      <boolean id="portrait">false</boolean>
+      <boolean id="landscapeRight">false</boolean>
+      <boolean id="portraitUpsideDown">false</boolean>
+    </attributes>
+  </attributes>
+</scene>
