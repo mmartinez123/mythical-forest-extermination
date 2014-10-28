@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<game title="Mythical Forest Extermination" GSCVersion="0.10.0" PGFVersion="0.19">
-  <attributes>
-    <text id="name">default name</text>
-    <real id="time">0</real>
-    <size id="displaySize">
-      <real id="width">720</real>
-      <real id="height">480</real>
-    </size>
-    <text id="actorTags" />
-  </attributes>
+<game GSCVersion="0.10.0" PGFVersion="0.19" title="Mythical Forest Extermination">
   <tags />
   <resolutionIndependence>0</resolutionIndependence>
   <instructions>Add game instructions here.</instructions>
@@ -33,4 +24,13 @@
     <scene id="id639111" />
     <scene id="id310108" />
   </scenes>
+  <attributes>
+    <text id="name">default name</text>
+    <real id="time">0</real>
+    <size id="displaySize">
+      <real id="width">720</real>
+      <real id="height">480</real>
+    </size>
+    <text id="actorTags" />
+  </attributes>
 </game>
