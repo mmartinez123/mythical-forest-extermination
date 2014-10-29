@@ -29,6 +29,15 @@
     <image name="Back Button">
       <file name="Back Button.png" size="1133" />
     </image>
+    <image name="Forest Background">
+      <file name="Forest Background.png" size="34367" />
+    </image>
+    <image name="Bill Standing">
+      <file name="Bill Standing.png" size="989" />
+    </image>
+    <image name="Grass">
+      <file name="Grass.png" size="420" />
+    </image>
   </images>
   <behaviors />
 </assets>
