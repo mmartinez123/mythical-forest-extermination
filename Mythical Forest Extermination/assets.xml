@@ -38,6 +38,9 @@
     <image name="Grass">
       <file name="Grass.png" size="420" />
     </image>
+    <image name="Platform A">
+      <file name="Platform A.png" size="396" />
+    </image>
   </images>
   <behaviors />
 </assets>

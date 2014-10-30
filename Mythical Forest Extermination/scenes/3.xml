@@ -17,7 +17,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -36,74 +39,10 @@
               <real id="height">96.4444444444444</real>
             </size>
             <angle id="rotation">0</angle>
+            <boolean id="preloadArt">true</boolean>
+            <boolean id="id118732" name="Jumping">false</boolean>
           </attributes>
           <behaviors>
-            <behavior id="id556041" class="RuleBehavior" enabled="true">
-              <attributes>
-                <text id="name">Move Right</text>
-                <text id="bundleName">Rule.behavior</text>
-                <real id="compoundConditionKind">0</real>
-              </attributes>
-              <conditions>
-                <condition id="id575396" eventType="key" pluginPredicateTypeIndex="0" class="Key">
-                  <attributes>
-                    <text id="name">default name</text>
-                    <index id="conditionType">0</index>
-                  </attributes>
-                  <predicate type="key">
-                    <attributes>
-                      <text id="mode">down</text>
-                      <text id="keyString">d</text>
-                    </attributes>
-                  </predicate>
-                </condition>
-              </conditions>
-              <behaviors>
-                <behavior id="id773629" class="MoveBehavior" enabled="true">
-                  <attributes>
-                    <text id="name">Move</text>
-                    <text id="bundleName">Move.behavior</text>
-                    <angle id="direction">0</angle>
-                    <index id="space">0</index>
-                    <index id="moveType">0</index>
-                    <real id="speed">300</real>
-                  </attributes>
-                </behavior>
-              </behaviors>
-            </behavior>
-            <behavior id="id227816" class="RuleBehavior" enabled="true">
-              <attributes>
-                <text id="name">Move Left</text>
-                <text id="bundleName">Rule.behavior</text>
-                <real id="compoundConditionKind">0</real>
-              </attributes>
-              <conditions>
-                <condition id="id555900" eventType="key" pluginPredicateTypeIndex="0" class="Key">
-                  <attributes>
-                    <text id="name">default name</text>
-                    <index id="conditionType">0</index>
-                  </attributes>
-                  <predicate type="key">
-                    <attributes>
-                      <text id="mode">down</text>
-                      <text id="keyString">a</text>
-                    </attributes>
-                  </predicate>
-                </condition>
-              </conditions>
-              <behaviors>
-                <behavior id="id601477" class="MoveBehavior" enabled="true">
-                  <attributes>
-                    <text id="name">Move</text>
-                    <text id="bundleName">Move.behavior</text>
-                    <angle id="direction">180</angle>
-                    <index id="space">0</index>
-                    <index id="moveType">0</index>
-                    <real id="speed">300</real>
-                  </attributes>
-                </behavior>
-              </behaviors>
-            </behavior>
             <behavior id="id834626" class="AccelerateBehavior" enabled="true">
               <attributes>
                 <text id="name">Gravity Serum</text>
@@ -113,23 +52,182 @@
                 <real id="acceleration">800</real>
               </attributes>
             </behavior>
-            <behavior id="id939104" class="CollideBehavior" enabled="true">
+            <behavior id="id618242" class="RuleBehavior" enabled="true">
               <attributes>
-                <text id="name">Floor Stop</text>
-                <text id="bundleName">Collide.behavior</text>
-                <text id="prototypeKey">id649200</text>
-                <text id="actorTag">Ground</text>
-                <index id="mode">0</index>
+                <text id="name">The Big Move Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
               </attributes>
+              <conditions>
+                <condition id="id583481" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="key">
+                    <attributes>
+                      <text id="mode">up</text>
+                      <text id="keyString">a</text>
+                    </attributes>
+                  </predicate>
+                </condition>
+                <condition id="id317207" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="key">
+                    <attributes>
+                      <text id="mode">up</text>
+                      <text id="keyString">d</text>
+                    </attributes>
+                  </predicate>
+                </condition>
+                <condition id="id267994" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="key">
+                    <attributes>
+                      <text id="mode">up</text>
+                      <text id="keyString">w</text>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id720253" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Stop</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.x</text>
+                    <text id="RHS">0</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id867147" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">To the left!</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id716175" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+                      <attributes>
+                        <text id="name">default name</text>
+                        <index id="conditionType">0</index>
+                      </attributes>
+                      <predicate type="key">
+                        <attributes>
+                          <text id="mode">down</text>
+                          <text id="keyString">a</text>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id449713" class="ChangeAttributeAction" enabled="true">
+                      <attributes>
+                        <text id="name">Change Attribute</text>
+                        <text id="bundleName">ChangeAttribute.behavior</text>
+                        <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.x</text>
+                        <text id="RHS">-250</text>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+                <behavior id="id291430" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">To the right!</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id583127" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+                      <attributes>
+                        <text id="name">default name</text>
+                        <index id="conditionType">0</index>
+                      </attributes>
+                      <predicate type="key">
+                        <attributes>
+                          <text id="mode">down</text>
+                          <text id="keyString">d</text>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id835407" class="ChangeAttributeAction" enabled="true">
+                      <attributes>
+                        <text id="name">Change Attribute</text>
+                        <text id="bundleName">ChangeAttribute.behavior</text>
+                        <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.x</text>
+                        <text id="RHS">250</text>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+                <behavior id="id401823" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Jump</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id467041" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+                      <attributes>
+                        <text id="name">default name</text>
+                        <index id="conditionType">0</index>
+                      </attributes>
+                      <predicate type="key">
+                        <attributes>
+                          <text id="mode">down</text>
+                          <text id="keyString">w</text>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                    <condition id="id435698" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+                      <attributes>
+                        <text id="name">default name</text>
+                        <index id="conditionType">0</index>
+                      </attributes>
+                      <predicate type="collision">
+                        <attributes>
+                          <text id="prototypeKey">id649200</text>
+                          <text id="actorTag" />
+                          <real id="mode">0</real>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id774336" class="ChangeAttributeAction" enabled="true">
+                      <attributes>
+                        <text id="name">Change Attribute</text>
+                        <text id="bundleName">ChangeAttribute.behavior</text>
+                        <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.y</text>
+                        <text id="RHS">400</text>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </elseBehaviors>
             </behavior>
           </behaviors>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
-              <attributes />
+              <attributes>
+                <real id="restitution">0</real>
+              </attributes>
             </physics>
           </aspects>
         </actor>
@@ -142,6 +240,44 @@
             <size id="size">
               <real id="width">721</real>
               <real id="height">38</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id670312" class="CollideBehavior" enabled="true">
+              <attributes>
+                <text id="name">Collide</text>
+                <text id="bundleName">Collide.behavior</text>
+                <text id="prototypeKey">id806505</text>
+                <text id="actorTag">Ground</text>
+                <index id="mode">0</index>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes>
+                <real id="restitution">0.5</real>
+              </attributes>
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id926773" prototype="id311809">
+          <attributes>
+            <point id="position">
+              <real id="x">209.5</real>
+              <real id="y">150</real>
+            </point>
+            <size id="size">
+              <real id="width">106</real>
+              <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
