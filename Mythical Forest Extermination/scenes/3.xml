@@ -196,8 +196,8 @@
                       <predicate type="collision">
                         <attributes>
                           <text id="prototypeKey">id649200</text>
-                          <text id="actorTag" />
-                          <real id="mode">0</real>
+                          <text id="actorTag">Floors</text>
+                          <real id="mode">1</real>
                         </attributes>
                       </predicate>
                     </condition>
@@ -227,6 +227,7 @@
             <physics>
               <attributes>
                 <real id="restitution">0</real>
+                <boolean id="fixedRotation">true</boolean>
               </attributes>
             </physics>
           </aspects>
@@ -272,14 +273,96 @@
         <actor id="id926773" prototype="id311809">
           <attributes>
             <point id="position">
-              <real id="x">209.5</real>
-              <real id="y">150</real>
+              <real id="x">194.5</real>
+              <real id="y">100</real>
             </point>
             <size id="size">
               <real id="width">106</real>
               <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <enumeration id="blendingMode">0</enumeration>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes>
+                <boolean id="movable">false</boolean>
+                <enumeration id="collisionShape">0</enumeration>
+                <real id="restitution">0.2</real>
+              </attributes>
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id834767" prototype="id311809">
+          <attributes>
+            <point id="position">
+              <real id="x">536.5</real>
+              <real id="y">98</real>
+            </point>
+            <size id="size">
+              <real id="width">106</real>
+              <real id="height">30</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">Platform A</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes>
+                <boolean id="movable">false</boolean>
+                <real id="restitution">0.2</real>
+              </attributes>
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id683928" prototype="id311809">
+          <attributes>
+            <point id="position">
+              <real id="x">363</real>
+              <real id="y">187</real>
+            </point>
+            <size id="size">
+              <real id="width">250</real>
+              <real id="height">30</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes>
+                <boolean id="movable">false</boolean>
+                <real id="restitution">0.2</real>
+              </attributes>
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id493926" prototype="id476967">
+          <attributes>
+            <point id="position">
+              <real id="x">195.5</real>
+              <real id="y">225</real>
+            </point>
+            <size id="size">
+              <real id="width">15</real>
+              <real id="height">40.5</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">Bill's Arms</image>
           </attributes>
           <aspects>
             <graphics>

@@ -19,7 +19,7 @@
       <real id="alpha">1</real>
     </color>
     <image id="image">Grass</image>
-    <text id="tags" />
+    <text id="tags">Floors</text>
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors />

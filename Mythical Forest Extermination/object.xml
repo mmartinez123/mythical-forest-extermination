@@ -22,6 +22,7 @@
     <actor id="id806505" />
     <actor id="id649200" />
     <actor id="id311809" />
+    <actor id="id476967" />
   </prototypes>
   <plugins />
   <scenes>
@@ -36,6 +37,6 @@
       <real id="width">720</real>
       <real id="height">480</real>
     </size>
-    <text id="actorTags" />
+    <text id="actorTags">All	Floors</text>
   </attributes>
 </game>
