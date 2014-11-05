@@ -3,6 +3,35 @@
   <layers>
     <layer id="id775093">
       <actors>
+        <actor id="id201677" prototype="id216896">
+          <attributes>
+            <point id="position">
+              <real id="x">749</real>
+              <real id="y">251</real>
+            </point>
+            <size id="size">
+              <real id="width">75</real>
+              <real id="height">440</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <color id="color">
+              <real id="red">1</real>
+              <real id="green">1</real>
+              <real id="blue">1</real>
+              <real id="alpha">0</real>
+            </color>
+            <text id="name">Wall Copy 1</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
         <actor id="id945404" prototype="id242895">
           <attributes>
             <point id="position">
@@ -215,6 +244,41 @@
                 </behavior>
               </elseBehaviors>
             </behavior>
+            <behavior id="id678999" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Position Check</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">0</index>
+                <real id="interval">0</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id709947" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">X</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id789045</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="self.attributes.position.x" />
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id379752" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Y</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id614484</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="self.attributes.position.y" />
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
           </behaviors>
           <aspects>
             <graphics>
@@ -273,8 +337,8 @@
         <actor id="id926773" prototype="id311809">
           <attributes>
             <point id="position">
-              <real id="x">194.5</real>
-              <real id="y">100</real>
+              <real id="x">192.5</real>
+              <real id="y">87</real>
             </point>
             <size id="size">
               <real id="width">106</real>
@@ -304,7 +368,7 @@
           <attributes>
             <point id="position">
               <real id="x">536.5</real>
-              <real id="y">98</real>
+              <real id="y">82</real>
             </point>
             <size id="size">
               <real id="width">106</real>
@@ -315,7 +379,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -329,8 +396,8 @@
         <actor id="id683928" prototype="id311809">
           <attributes>
             <point id="position">
-              <real id="x">363</real>
-              <real id="y">187</real>
+              <real id="x">362</real>
+              <real id="y">162</real>
             </point>
             <size id="size">
               <real id="width">250</real>
@@ -340,7 +407,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -351,18 +421,122 @@
             </physics>
           </aspects>
         </actor>
-        <actor id="id493926" prototype="id476967">
+        <actor id="id986381" prototype="id716435">
           <attributes>
             <point id="position">
-              <real id="x">195.5</real>
-              <real id="y">225</real>
+              <real id="x">196</real>
+              <real id="y">235</real>
             </point>
             <size id="size">
-              <real id="width">15</real>
-              <real id="height">40.5</real>
+              <real id="width">150</real>
+              <real id="height">50</real>
             </size>
             <angle id="rotation">0</angle>
-            <image id="image">Bill's Arms</image>
+          </attributes>
+          <behaviors>
+            <behavior id="id828555" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Point to Mouse</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">0</index>
+                <real id="interval">0</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id835305" class="RotateToPositionBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Rotate To Position</text>
+                    <text id="bundleName">RotateToPosition.behavior</text>
+                    <boolean id="runToCompletion">false</boolean>
+                    <angle id="angle">0</angle>
+                    <index id="space">1</index>
+                    <real id="angularVelocity">10000000</real>
+                    <boolean id="continuousMovement">false</boolean>
+                    <point id="position">
+                      <real id="x">
+                        <expression>
+                          <reference keypath="game.devices.mouse.position.x" />
+                        </expression>
+                      </real>
+                      <real id="y">
+                        <expression>
+                          <reference keypath="game.devices.mouse.position.y" />
+                        </expression>
+                      </real>
+                    </point>
+                    <angle id="offsetAngle">0</angle>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id699851" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Follow Bill</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">0</index>
+                <real id="interval">0</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id684757" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">X</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id789045" />
+                        <string>-13</string>
+                        <string>
+
+</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id375102" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Y</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.y</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id614484" />
+                        <string>+13</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id854462" prototype="id216896">
+          <attributes>
+            <point id="position">
+              <real id="x">-32.5</real>
+              <real id="y">252</real>
+            </point>
+            <size id="size">
+              <real id="width">75</real>
+              <real id="height">440</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <color id="color">
+              <real id="red">1</real>
+              <real id="green">1</real>
+              <real id="blue">1</real>
+              <real id="alpha">0</real>
+            </color>
           </attributes>
           <aspects>
             <graphics>

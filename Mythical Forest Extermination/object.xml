@@ -22,7 +22,8 @@
     <actor id="id806505" />
     <actor id="id649200" />
     <actor id="id311809" />
-    <actor id="id476967" />
+    <actor id="id716435" />
+    <actor id="id216896" />
   </prototypes>
   <plugins />
   <scenes>
@@ -38,5 +39,7 @@
       <real id="height">480</real>
     </size>
     <text id="actorTags">All	Floors</text>
+    <integer id="id789045" name="Bill Position X">0</integer>
+    <integer id="id614484" name="Bill Position Y">0</integer>
   </attributes>
 </game>
