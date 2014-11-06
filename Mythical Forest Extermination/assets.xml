@@ -44,6 +44,9 @@
     <image name="Bill's Arms">
       <file name="Bill's Arms.png" size="553" />
     </image>
+    <image name="Normal Bullet">
+      <file name="Normal Bullet.png" size="191" />
+    </image>
   </images>
   <behaviors />
 </assets>

@@ -22,13 +22,30 @@
             </color>
             <text id="name">Wall Copy 1</text>
           </attributes>
+          <behaviors>
+            <behavior id="id344216" class="CollideBehavior" enabled="true">
+              <attributes>
+                <text id="name">Collide</text>
+                <text id="bundleName">Collide.behavior</text>
+                <text id="prototypeKey">id806505</text>
+                <text id="actorTag">Ground</text>
+                <index id="mode">0</index>
+              </attributes>
+            </behavior>
+          </behaviors>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
-              <attributes />
+              <attributes>
+                <boolean id="movable">false</boolean>
+                <real id="restitution">0</real>
+              </attributes>
             </physics>
           </aspects>
         </actor>
@@ -396,8 +413,8 @@
         <actor id="id683928" prototype="id311809">
           <attributes>
             <point id="position">
-              <real id="x">362</real>
-              <real id="y">162</real>
+              <real id="x">360</real>
+              <real id="y">138</real>
             </point>
             <size id="size">
               <real id="width">250</real>
@@ -432,6 +449,8 @@
               <real id="height">50</real>
             </size>
             <angle id="rotation">0</angle>
+            <integer id="id627793" name="Gun Wheel">0</integer>
+            <image id="image">Bill's Arms</image>
           </attributes>
           <behaviors>
             <behavior id="id828555" class="TimerBehavior" enabled="true">
@@ -487,9 +506,7 @@
                       <expression>
                         <reference keypath="game.attributes.id789045" />
                         <string>-13</string>
-                        <string>
-
-</string>
+                        <string />
                       </expression>
                     </text>
                   </attributes>
@@ -509,10 +526,52 @@
                 </behavior>
               </behaviors>
             </behavior>
+            <behavior id="id751157" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Shoot</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id427702" eventType="mouse button" pluginPredicateTypeIndex="0" class="MouseButton">
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="mouse" mouseState="down">
+                    <attributes />
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id710445" class="SpawnAction" enabled="true">
+                  <attributes>
+                    <text id="name">Spawn Actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id193666</text>
+                    <angle id="direction">
+                      <expression>
+                        <reference keypath="game.devices.mouse.position.x" />
+                        <string>, </string>
+                        <reference keypath="game.devices.mouse.position.y" />
+                      </expression>
+                    </angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">40</real>
+                    <real id="y">10</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">1</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
           </behaviors>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -538,13 +597,30 @@
               <real id="alpha">0</real>
             </color>
           </attributes>
+          <behaviors>
+            <behavior id="id429513" class="CollideBehavior" enabled="true">
+              <attributes>
+                <text id="name">Collide</text>
+                <text id="bundleName">Collide.behavior</text>
+                <text id="prototypeKey">id806505</text>
+                <text id="actorTag">Ground</text>
+                <index id="mode">0</index>
+              </attributes>
+            </behavior>
+          </behaviors>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
-              <attributes />
+              <attributes>
+                <boolean id="movable">false</boolean>
+                <real id="restitution">0</real>
+              </attributes>
             </physics>
           </aspects>
         </actor>

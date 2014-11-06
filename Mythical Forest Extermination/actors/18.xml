@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id216896" PGFVersion="0.19" GSCVersion="0.10.0">
+<actor id="id193666" PGFVersion="0.19" GSCVersion="0.10.0">
   <attributes>
-    <text id="name">Wall</text>
+    <text id="name">Normal Bullet</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">120</real>
-      <real id="height">120</real>
+      <real id="width">11</real>
+      <real id="height">8</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
@@ -18,11 +18,58 @@
       <real id="blue">1</real>
       <real id="alpha">1</real>
     </color>
-    <image id="image" />
+    <image id="image">Normal Bullet</image>
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
   </attributes>
-  <behaviors />
+  <behaviors>
+    <behavior id="id130393" class="MoveBehavior" enabled="true">
+      <attributes>
+        <text id="name">Move</text>
+        <text id="bundleName">Move.behavior</text>
+        <angle id="direction">
+          <expression>
+            <reference keypath="game.devices.mouse.position.x" />
+            <string>,</string>
+            <reference keypath="game.devices.mouse.position.y" />
+          </expression>
+        </angle>
+        <index id="space">0</index>
+        <index id="moveType">0</index>
+        <real id="speed">434.831460674157</real>
+      </attributes>
+    </behavior>
+    <behavior id="id525465" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Disappear</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id883767" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey" />
+              <text id="actorTag">All</text>
+              <real id="mode">1</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id182414" class="DestroyAction" enabled="true">
+          <attributes>
+            <text id="name">Destroy</text>
+            <text id="bundleName">Destroy.behavior</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+  </behaviors>
   <aspects>
     <graphics>
       <attributes>
