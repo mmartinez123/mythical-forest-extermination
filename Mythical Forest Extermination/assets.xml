@@ -53,6 +53,9 @@
     <image name="Scatter Bullet">
       <file name="Scatter Bullet.png" size="210" />
     </image>
+    <image name="Bill's Arms Flame">
+      <file name="Bill's Arms Flame.png" size="531" />
+    </image>
   </images>
   <behaviors />
 </assets>

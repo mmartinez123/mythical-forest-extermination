@@ -556,6 +556,21 @@
                   </predicate>
                 </condition>
               </conditions>
+              <behaviors>
+                <behavior id="id710445" class="SpawnAction" enabled="true">
+                  <attributes>
+                    <text id="name">Spawn Actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id193666</text>
+                    <angle id="direction">0</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">40</real>
+                    <real id="y">10</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">1</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
             </behavior>
             <behavior id="id367366" class="RuleBehavior" enabled="true">
               <attributes>
@@ -650,23 +665,74 @@
                 </condition>
               </conditions>
               <behaviors>
-                <behavior id="id710445" class="SpawnAction" enabled="true">
+                <behavior id="id126742" class="SpawnAction" enabled="true">
                   <attributes>
                     <text id="name">Spawn Actor</text>
                     <text id="bundleName">Spawn.behavior</text>
                     <text id="prototypeKey">id483778</text>
-                    <angle id="direction">
-                      <expression>
-                        <reference keypath="game.devices.mouse.position.x" />
-                        <string>, </string>
-                        <reference keypath="game.devices.mouse.position.y" />
-                      </expression>
-                    </angle>
+                    <angle id="direction">-20</angle>
                     <index id="directionSpace">0</index>
                     <real id="x">40</real>
                     <real id="y">10</real>
                     <index id="positionSpace">0</index>
                     <index id="layerOrder">1</index>
+                  </attributes>
+                </behavior>
+                <behavior id="id267652" class="SpawnAction" enabled="true">
+                  <attributes>
+                    <text id="name">Spawn Actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id483778</text>
+                    <angle id="direction">0</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">40</real>
+                    <real id="y">10</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">1</index>
+                  </attributes>
+                </behavior>
+                <behavior id="id653435" class="SpawnAction" enabled="true">
+                  <attributes>
+                    <text id="name">Spawn Actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id483778</text>
+                    <angle id="direction">20</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">40</real>
+                    <real id="y">10</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">1</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id202356" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Flame Gun</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id455768" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.id627793</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">=</text>
+                      <real id="RHS">2</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id654272" class="ChangeImageAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Image</text>
+                    <text id="bundleName">ChangeImage.behavior</text>
+                    <image id="image">Bill's Arms Flame</image>
                   </attributes>
                 </behavior>
               </behaviors>
