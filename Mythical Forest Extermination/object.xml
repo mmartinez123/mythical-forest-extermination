@@ -25,7 +25,7 @@
     <actor id="id216896" />
     <actor id="id483778" />
     <actor id="id193666" />
-    <actor id="id381893" />
+    <actor id="id690636" />
   </prototypes>
   <plugins />
   <scenes>
@@ -43,5 +43,6 @@
     <text id="actorTags">All	Floors	All</text>
     <integer id="id789045" name="Bill Position X">0</integer>
     <integer id="id614484" name="Bill Position Y">0</integer>
+    <integer id="id221901" name="Flame Bye-Bye">0</integer>
   </attributes>
 </game>

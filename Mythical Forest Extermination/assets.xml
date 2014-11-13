@@ -56,6 +56,9 @@
     <image name="Bill's Arms Flame">
       <file name="Bill's Arms Flame.png" size="531" />
     </image>
+    <image name="Flame.">
+      <file name="Flame..png" size="533" />
+    </image>
   </images>
   <behaviors />
 </assets>
