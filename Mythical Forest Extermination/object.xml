@@ -44,5 +44,6 @@
     <integer id="id789045" name="Bill Position X">0</integer>
     <integer id="id614484" name="Bill Position Y">0</integer>
     <integer id="id221901" name="Flame Bye-Bye">0</integer>
+    <integer id="id308870" name="Arm Rotation">0</integer>
   </attributes>
 </game>

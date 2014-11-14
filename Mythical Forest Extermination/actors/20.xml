@@ -52,6 +52,31 @@
           </attributes>
         </behavior>
       </behaviors>
+      <elseBehaviors>
+        <behavior id="id469424" class="TimerBehavior" enabled="true">
+          <attributes>
+            <text id="name">Timer</text>
+            <text id="bundleName">Timer.behavior</text>
+            <index id="timerType">0</index>
+            <real id="interval">0</real>
+            <boolean id="runToCompletion">false</boolean>
+          </attributes>
+          <behaviors>
+            <behavior id="id228848" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.rotation</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="game.attributes.id308870" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </elseBehaviors>
     </behavior>
   </behaviors>
   <aspects>

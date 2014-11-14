@@ -21,6 +21,7 @@
               <real id="alpha">0</real>
             </color>
             <text id="name">Wall Copy 1</text>
+            <integer id="id622443" name="Arm Rotation">0</integer>
           </attributes>
           <behaviors>
             <behavior id="id344216" class="CollideBehavior" enabled="true">
@@ -768,36 +769,25 @@
                 </condition>
               </conditions>
               <behaviors>
-                <behavior id="id190331" class="TimerBehavior" enabled="true">
-                  <attributes>
-                    <text id="name">Timer</text>
-                    <text id="bundleName">Timer.behavior</text>
-                    <index id="timerType">0</index>
-                    <real id="interval">0</real>
-                    <boolean id="runToCompletion">false</boolean>
-                  </attributes>
-                  <behaviors>
-                    <behavior id="id217385" class="SpawnAction" enabled="true">
-                      <attributes>
-                        <text id="name">Spawn Actor</text>
-                        <text id="bundleName">Spawn.behavior</text>
-                        <text id="prototypeKey">id690636</text>
-                        <angle id="direction">0</angle>
-                        <index id="directionSpace">0</index>
-                        <real id="x">40</real>
-                        <real id="y">10</real>
-                        <index id="positionSpace">0</index>
-                        <index id="layerOrder">1</index>
-                      </attributes>
-                    </behavior>
-                  </behaviors>
-                </behavior>
                 <behavior id="id393452" class="ChangeAttributeAction" enabled="true">
                   <attributes>
                     <text id="name">Change Attribute</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
                     <text id="targetAttribute">game.attributes.id221901</text>
                     <text id="RHS">0</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id217385" class="SpawnAction" enabled="true">
+                  <attributes>
+                    <text id="name">Spawn Actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id690636</text>
+                    <angle id="direction">0</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">40</real>
+                    <real id="y">10</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">1</index>
                   </attributes>
                 </behavior>
               </behaviors>
@@ -909,6 +899,18 @@
                   </attributes>
                 </behavior>
               </behaviors>
+            </behavior>
+            <behavior id="id844012" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Rotate Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id308870</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.rotation" />
+                  </expression>
+                </text>
+              </attributes>
             </behavior>
           </behaviors>
           <aspects>
