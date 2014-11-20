@@ -26,8 +26,6 @@
     <actor id="id483778" />
     <actor id="id193666" />
     <actor id="id690636" />
-    <actor id="id163880" />
-    <actor id="id245306" />
   </prototypes>
   <plugins />
   <scenes>
@@ -50,7 +48,5 @@
     <integer id="id788456" name="Flame X">0</integer>
     <integer id="id377731" name="Flame Rotate">0</integer>
     <integer id="id566949" name="Flame Y">0</integer>
-    <integer id="id954882" name="Batty Spawn X">0</integer>
-    <integer id="id856724" name="Batty Spawn Y">0</integer>
   </attributes>
 </game>

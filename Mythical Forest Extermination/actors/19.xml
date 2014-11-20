@@ -36,7 +36,7 @@
         </angle>
         <index id="space">0</index>
         <index id="moveType">0</index>
-        <real id="speed">900</real>
+        <real id="speed">750</real>
       </attributes>
     </behavior>
     <behavior id="id525465" class="RuleBehavior" enabled="true">

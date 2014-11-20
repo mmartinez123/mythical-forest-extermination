@@ -59,9 +59,6 @@
     <image name="Flame.">
       <file name="Flame..png" size="533" />
     </image>
-    <image name="Batty">
-      <file name="Batty.png" size="424" />
-    </image>
   </images>
   <behaviors />
 </assets>
