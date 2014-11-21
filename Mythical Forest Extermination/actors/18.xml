@@ -70,7 +70,7 @@
           <predicate type="collision">
             <attributes>
               <text id="prototypeKey" />
-              <text id="actorTag">All</text>
+              <text id="actorTag" />
               <real id="mode">1</real>
             </attributes>
           </predicate>

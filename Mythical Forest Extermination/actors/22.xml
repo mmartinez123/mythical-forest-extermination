@@ -58,35 +58,95 @@
         </behavior>
       </behaviors>
     </behavior>
-    <behavior id="id556486" class="SpawnAction" enabled="true">
+    <behavior id="id589175" class="RuleBehavior" enabled="true">
       <attributes>
-        <text id="name">Spawn Actor</text>
-        <text id="bundleName">Spawn.behavior</text>
-        <text id="prototypeKey">id163880</text>
-        <angle id="direction">0</angle>
-        <index id="directionSpace">1</index>
-        <real id="x">
-          <expression>
-            <reference keypath="game.attributes.id954882" />
-          </expression>
-        </real>
-        <real id="y">
-          <expression>
-            <reference keypath="game.attributes.id856724" />
-          </expression>
-        </real>
-        <index id="positionSpace">0</index>
-        <index id="layerOrder">0</index>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
       </attributes>
+      <conditions>
+        <condition id="id283609" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">game.attributes.id167426</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">&lt;=</text>
+              <real id="RHS">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <elseBehaviors>
+        <behavior id="id381379" class="TimerBehavior" enabled="true">
+          <attributes>
+            <text id="name">Timer</text>
+            <text id="bundleName">Timer.behavior</text>
+            <index id="timerType">0</index>
+            <real id="interval">5</real>
+            <boolean id="runToCompletion">false</boolean>
+          </attributes>
+          <behaviors>
+            <behavior id="id241864" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id167426</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="game.attributes.id167426" />
+                    <string> - .1</string>
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </elseBehaviors>
     </behavior>
-    <behavior id="id381379" class="TimerBehavior" enabled="true">
+    <behavior id="id119262" class="TimerBehavior" enabled="true">
       <attributes>
         <text id="name">Timer</text>
         <text id="bundleName">Timer.behavior</text>
         <index id="timerType">0</index>
-        <real id="interval">5</real>
+        <real id="interval">
+          <expression>
+            <reference keypath="game.attributes.id167426" />
+          </expression>
+        </real>
         <boolean id="runToCompletion">false</boolean>
       </attributes>
+      <behaviors>
+        <behavior id="id556486" class="SpawnAction" enabled="true">
+          <attributes>
+            <text id="name">Spawn Actor</text>
+            <text id="bundleName">Spawn.behavior</text>
+            <text id="prototypeKey">id163880</text>
+            <angle id="direction">
+              <expression>
+                <reference keypath="game.attributes.id789045" />
+                <string>, </string>
+                <reference keypath="game.attributes.id614484" />
+              </expression>
+            </angle>
+            <index id="directionSpace">1</index>
+            <real id="x">
+              <expression>
+                <reference keypath="game.attributes.id954882" />
+              </expression>
+            </real>
+            <real id="y">
+              <expression>
+                <reference keypath="game.attributes.id856724" />
+              </expression>
+            </real>
+            <index id="positionSpace">0</index>
+            <index id="layerOrder">0</index>
+          </attributes>
+        </behavior>
+      </behaviors>
     </behavior>
   </behaviors>
   <aspects>

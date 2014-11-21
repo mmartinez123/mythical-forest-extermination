@@ -28,6 +28,7 @@
     <actor id="id690636" />
     <actor id="id163880" />
     <actor id="id245306" />
+    <actor id="id719665" />
   </prototypes>
   <plugins />
   <scenes>
@@ -42,7 +43,7 @@
       <real id="width">720</real>
       <real id="height">480</real>
     </size>
-    <text id="actorTags">All	Floors	All</text>
+    <text id="actorTags">All	Floors	All	Monsters</text>
     <integer id="id789045" name="Bill Position X">0</integer>
     <integer id="id614484" name="Bill Position Y">0</integer>
     <integer id="id221901" name="Flame Bye-Bye">0</integer>
@@ -52,5 +53,7 @@
     <integer id="id566949" name="Flame Y">0</integer>
     <integer id="id954882" name="Batty Spawn X">0</integer>
     <integer id="id856724" name="Batty Spawn Y">0</integer>
+    <integer id="id167426" name="Batty Spawn Timer">5</integer>
+    <integer id="id222572" name="Batty Health">25</integer>
   </attributes>
 </game>
