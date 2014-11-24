@@ -53,7 +53,7 @@
         <actor id="id945404" prototype="id242895">
           <attributes>
             <point id="position">
-              <real id="x">360</real>
+              <real id="x">362</real>
               <real id="y">240.5</real>
             </point>
             <size id="size">
@@ -291,6 +291,106 @@
                     <text id="RHS">
                       <expression>
                         <reference keypath="self.attributes.position.y" />
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id351416" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Batty Damage</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id615393" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="collision">
+                    <attributes>
+                      <text id="prototypeKey">id163880</text>
+                      <text id="actorTag" />
+                      <real id="mode">0</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id803915" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.id406993</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="self.attributes.id406993" />
+                        <string> - 10</string>
+                        <string>
+</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id934708" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">DEATH</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id643339" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.id406993</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&lt;=</text>
+                      <real id="RHS">0</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id738984" class="DestroyAction" enabled="true">
+                  <attributes>
+                    <text id="name">Destroy</text>
+                    <text id="bundleName">Destroy.behavior</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id421220" class="ChangeSceneAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Scene</text>
+                    <text id="bundleName">ChangeScene.behavior</text>
+                    <text id="sceneKey">next</text>
+                    <boolean id="enableAdvertisement">false</boolean>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id463519" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Health Check</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">0</index>
+                <real id="interval">0</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id481090" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Health Check</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id380415</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="self.attributes.id406993" />
                       </expression>
                     </text>
                   </attributes>
@@ -1036,6 +1136,75 @@
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
               </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id409416" prototype="id719665">
+          <attributes>
+            <point id="position">
+              <real id="x">163</real>
+              <real id="y">463.5</real>
+            </point>
+            <size id="size">
+              <real id="width">323</real>
+              <real id="height">33</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <color id="color">
+              <real id="red">1</real>
+              <real id="green">1</real>
+              <real id="blue">1</real>
+              <real id="alpha">0</real>
+            </color>
+          </attributes>
+          <behaviors>
+            <behavior id="id713620" class="DisplayTextBehavior" enabled="true">
+              <attributes>
+                <text id="name">Health</text>
+                <text id="bundleName">DisplayText.behavior</text>
+                <text id="text">Health: </text>
+                <text id="font">Arial</text>
+                <real id="size">30</real>
+                <index id="alignment">0</index>
+                <boolean id="wrap">false</boolean>
+                <color id="color">
+                  <real id="red">1</real>
+                  <real id="green">1</real>
+                  <real id="blue">1</real>
+                  <real id="alpha">1</real>
+                </color>
+              </attributes>
+            </behavior>
+            <behavior id="id117444" class="DisplayTextBehavior" enabled="true">
+              <attributes>
+                <text id="name">Actual Health</text>
+                <text id="bundleName">DisplayText.behavior</text>
+                <text id="text">
+                  <expression>
+                    <string>        </string>
+                    <reference keypath="game.attributes.id380415" />
+                  </expression>
+                </text>
+                <text id="font">Arial</text>
+                <real id="size">30</real>
+                <index id="alignment">1</index>
+                <boolean id="wrap">false</boolean>
+                <color id="color">
+                  <real id="red">1</real>
+                  <real id="green">1</real>
+                  <real id="blue">1</real>
+                  <real id="alpha">1</real>
+                </color>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes />
             </graphics>
             <motion />
             <physics>

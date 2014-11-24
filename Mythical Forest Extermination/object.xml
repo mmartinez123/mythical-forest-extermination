@@ -29,6 +29,7 @@
     <actor id="id163880" />
     <actor id="id245306" />
     <actor id="id719665" />
+    <actor id="id520539" />
   </prototypes>
   <plugins />
   <scenes>
@@ -55,5 +56,6 @@
     <integer id="id856724" name="Batty Spawn Y">0</integer>
     <integer id="id167426" name="Batty Spawn Timer">5</integer>
     <integer id="id222572" name="Batty Health">25</integer>
+    <integer id="id380415" name="Bill Health">100</integer>
   </attributes>
 </game>

@@ -21,6 +21,7 @@
     <image id="image">Batty</image>
     <text id="tags">Monsters</text>
     <boolean id="preloadArt">true</boolean>
+    <integer id="id374647" name="Health">25</integer>
   </attributes>
   <behaviors>
     <behavior id="id781153" class="TimerBehavior" enabled="true">
@@ -50,7 +51,7 @@
               </real>
             </point>
             <index id="space">1</index>
-            <real id="speed">200</real>
+            <real id="speed">150</real>
           </attributes>
         </behavior>
       </behaviors>
@@ -64,17 +65,125 @@
         <index id="mode">0</index>
       </attributes>
     </behavior>
-    <behavior id="id790571" class="RuleBehavior" enabled="true">
+    <behavior id="id450099" class="RuleBehavior" enabled="true">
       <attributes>
-        <text id="name">Rule</text>
+        <text id="name">Bullet Kill</text>
         <text id="bundleName">Rule.behavior</text>
         <real id="compoundConditionKind">0</real>
       </attributes>
       <conditions>
-        <condition id="id259490" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+        <condition id="id573740" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id193666</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id938554" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.id374647</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="self.attributes.id374647" />
+                <string> - 10</string>
+                <string>
+</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id936468" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Scatter Kill</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id397184" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id483778</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id625894" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.id374647</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="self.attributes.id374647" />
+                <string> - 5</string>
+                <string>
+</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id790571" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Flame Kill</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id504170" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id690636</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id330360" class="DestroyAction" enabled="true">
+          <attributes>
+            <text id="name">Destroy</text>
+            <text id="bundleName">Destroy.behavior</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id453841" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">DIE</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id698822" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
           <attributes>
             <index id="conditionType">1</index>
-            <text id="subjectAttribute">game.attributes.id222572</text>
+            <text id="subjectAttribute">self.attributes.id374647</text>
             <text id="name">default name</text>
           </attributes>
           <predicate type="number">
@@ -86,7 +195,7 @@
         </condition>
       </conditions>
       <behaviors>
-        <behavior id="id669971" class="DestroyAction" enabled="true">
+        <behavior id="id128351" class="DestroyAction" enabled="true">
           <attributes>
             <text id="name">Destroy</text>
             <text id="bundleName">Destroy.behavior</text>

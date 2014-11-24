@@ -86,34 +86,6 @@
           </predicate>
         </condition>
       </conditions>
-      <behaviors>
-        <behavior id="id535813" class="TimerBehavior" enabled="true">
-          <attributes>
-            <text id="name">Timer</text>
-            <text id="bundleName">Timer.behavior</text>
-            <index id="timerType">0</index>
-            <real id="interval">0.5</real>
-            <boolean id="runToCompletion">false</boolean>
-          </attributes>
-          <behaviors>
-            <behavior id="id234646" class="ChangeAttributeAction" enabled="true">
-              <attributes>
-                <text id="name">Change Attribute</text>
-                <text id="bundleName">ChangeAttribute.behavior</text>
-                <text id="targetAttribute">game.attributes.id222572</text>
-                <text id="RHS">
-                  <expression>
-                    <reference keypath="game.attributes.id222572" />
-                    <string> - 25</string>
-                    <string>
-</string>
-                  </expression>
-                </text>
-              </attributes>
-            </behavior>
-          </behaviors>
-        </behavior>
-      </behaviors>
     </behavior>
   </behaviors>
   <aspects>

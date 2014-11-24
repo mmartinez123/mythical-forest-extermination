@@ -43,7 +43,7 @@
       <attributes>
         <text id="name">Disappear</text>
         <text id="bundleName">Rule.behavior</text>
-        <real id="compoundConditionKind">0</real>
+        <real id="compoundConditionKind">1</real>
       </attributes>
       <conditions>
         <condition id="id883767" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
@@ -54,7 +54,20 @@
           <predicate type="collision">
             <attributes>
               <text id="prototypeKey" />
-              <text id="actorTag" />
+              <text id="actorTag">Floors</text>
+              <real id="mode">1</real>
+            </attributes>
+          </predicate>
+        </condition>
+        <condition id="id704763" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey" />
+              <text id="actorTag">Monsters</text>
               <real id="mode">1</real>
             </attributes>
           </predicate>
