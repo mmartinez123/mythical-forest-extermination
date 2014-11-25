@@ -328,8 +328,7 @@
                       <expression>
                         <reference keypath="self.attributes.id406993" />
                         <string> - 10</string>
-                        <string>
-</string>
+                        <string />
                       </expression>
                     </text>
                   </attributes>
@@ -1185,7 +1184,7 @@
                 <text id="bundleName">DisplayText.behavior</text>
                 <text id="text">
                   <expression>
-                    <string>        </string>
+                    <string />
                     <reference keypath="game.attributes.id380415" />
                   </expression>
                 </text>
@@ -1202,6 +1201,37 @@
               </attributes>
             </behavior>
           </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id625494" prototype="id700072">
+          <attributes>
+            <point id="position">
+              <real id="x">574</real>
+              <real id="y">303</real>
+            </point>
+            <size id="size">
+              <real id="width">120</real>
+              <real id="height">120</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <color id="color">
+              <real id="red">1</real>
+              <real id="green">1</real>
+              <real id="blue">1</real>
+              <real id="alpha">0</real>
+            </color>
+          </attributes>
           <aspects>
             <graphics>
               <attributes />

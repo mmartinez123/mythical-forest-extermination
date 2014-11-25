@@ -22,6 +22,7 @@
     <text id="tags">Monsters</text>
     <boolean id="preloadArt">true</boolean>
     <integer id="id374647" name="Health">25</integer>
+    <integer id="id916282" name="Spawn Timer">5</integer>
   </attributes>
   <behaviors>
     <behavior id="id781153" class="TimerBehavior" enabled="true">
@@ -96,8 +97,7 @@
               <expression>
                 <reference keypath="self.attributes.id374647" />
                 <string> - 10</string>
-                <string>
-</string>
+                <string />
               </expression>
             </text>
           </attributes>
@@ -135,8 +135,7 @@
               <expression>
                 <reference keypath="self.attributes.id374647" />
                 <string> - 5</string>
-                <string>
-</string>
+                <string />
               </expression>
             </text>
           </attributes>
