@@ -58,6 +58,5 @@
     <integer id="id167426" name="Batty Spawn Timer">5</integer>
     <integer id="id222572" name="Batty Health">25</integer>
     <integer id="id380415" name="Bill Health">100</integer>
-    <integer id="id366145" name="Batty Number">0</integer>
   </attributes>
 </game>

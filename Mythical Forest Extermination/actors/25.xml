@@ -29,7 +29,7 @@
         <text id="bundleName">DisplayText.behavior</text>
         <text id="text">
           <expression>
-            <reference keypath="game.attributes.id167426" />
+            <reference keypath="game.attributes.time" />
           </expression>
         </text>
         <text id="font">Arial</text>

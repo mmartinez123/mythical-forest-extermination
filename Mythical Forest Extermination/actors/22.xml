@@ -23,96 +23,32 @@
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
-    <behavior id="id951038" class="RuleBehavior" enabled="true">
+    <behavior id="id517764" class="TimerBehavior" enabled="true">
       <attributes>
         <text id="name">Timer</text>
-        <text id="bundleName">Rule.behavior</text>
-        <real id="compoundConditionKind">0</real>
-      </attributes>
-      <conditions>
-        <condition id="id156247" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
-          <attributes>
-            <index id="conditionType">1</index>
-            <text id="subjectAttribute">game.attributes.id167426</text>
-            <text id="name">default name</text>
-          </attributes>
-          <predicate type="number">
-            <attributes>
-              <text id="operator">&gt;</text>
-              <real id="RHS">0</real>
-            </attributes>
-          </predicate>
-        </condition>
-      </conditions>
-      <behaviors>
-        <behavior id="id888700" class="ChangeAttributeAction" enabled="true">
-          <attributes>
-            <text id="name">Change Attribute</text>
-            <text id="bundleName">ChangeAttribute.behavior</text>
-            <text id="targetAttribute">game.attributes.id167426</text>
-            <text id="RHS">
-              <expression>
-                <reference keypath="game.attributes.id167426" />
-                <string>-(</string>
-                <reference keypath="game.attributes.id366145" />
-                <string>*1)</string>
-              </expression>
-            </text>
-          </attributes>
-        </behavior>
-      </behaviors>
-    </behavior>
-    <behavior id="id352123" class="TimerBehavior" enabled="true">
-      <attributes>
-        <text id="name">Spawn</text>
         <text id="bundleName">Timer.behavior</text>
         <index id="timerType">0</index>
         <real id="interval">
           <expression>
-            <reference keypath="game.attributes.id167426" />
+            <string>5-(</string>
+            <reference keypath="game.attributes.time" />
+            <string>/5)</string>
           </expression>
         </real>
         <boolean id="runToCompletion">false</boolean>
       </attributes>
       <behaviors>
-        <behavior id="id267368" class="SpawnAction" enabled="true">
+        <behavior id="id784661" class="SpawnAction" enabled="true">
           <attributes>
             <text id="name">Spawn Actor</text>
             <text id="bundleName">Spawn.behavior</text>
             <text id="prototypeKey">id163880</text>
-            <angle id="direction">
-              <expression>
-                <reference keypath="game.attributes.id789045" />
-                <string>, </string>
-                <reference keypath="game.attributes.id614484" />
-              </expression>
-            </angle>
-            <index id="directionSpace">1</index>
-            <real id="x">
-              <expression>
-                <string>random(-50, 1000)</string>
-              </expression>
-            </real>
-            <real id="y">
-              <expression>
-                <string>random(300, 500)</string>
-              </expression>
-            </real>
-            <index id="positionSpace">1</index>
+            <angle id="direction">0</angle>
+            <index id="directionSpace">0</index>
+            <real id="x">0</real>
+            <real id="y">0</real>
+            <index id="positionSpace">0</index>
             <index id="layerOrder">0</index>
-          </attributes>
-        </behavior>
-        <behavior id="id822106" class="ChangeAttributeAction" enabled="true">
-          <attributes>
-            <text id="name">Change Attribute</text>
-            <text id="bundleName">ChangeAttribute.behavior</text>
-            <text id="targetAttribute">game.attributes.id366145</text>
-            <text id="RHS">
-              <expression>
-                <reference keypath="game.attributes.id366145" />
-                <string>+1</string>
-              </expression>
-            </text>
           </attributes>
         </behavior>
       </behaviors>
