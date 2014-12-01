@@ -30,9 +30,9 @@
         <index id="timerType">0</index>
         <real id="interval">
           <expression>
-            <string>5-(</string>
+            <string>(1/</string>
             <reference keypath="game.attributes.time" />
-            <string>/5)</string>
+            <string>) * 5</string>
           </expression>
         </real>
         <boolean id="runToCompletion">false</boolean>
@@ -47,11 +47,25 @@
             <index id="directionSpace">0</index>
             <real id="x">0</real>
             <real id="y">0</real>
-            <index id="positionSpace">0</index>
+            <index id="positionSpace">1</index>
             <index id="layerOrder">0</index>
           </attributes>
         </behavior>
       </behaviors>
+    </behavior>
+    <behavior id="id760307" class="ChangeAttributeAction" enabled="true">
+      <attributes>
+        <text id="name">Change Attribute</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">game.attributes.id167426</text>
+        <text id="RHS">
+          <expression>
+            <string>(1/</string>
+            <reference keypath="game.attributes.time" />
+            <string>) * 5</string>
+          </expression>
+        </text>
+      </attributes>
     </behavior>
   </behaviors>
   <aspects>
