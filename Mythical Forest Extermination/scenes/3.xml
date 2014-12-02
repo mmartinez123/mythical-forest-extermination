@@ -1223,8 +1223,8 @@
         <actor id="id935680" prototype="id245306">
           <attributes>
             <point id="position">
-              <real id="x">-104</real>
-              <real id="y">265</real>
+              <real id="x">-158</real>
+              <real id="y">121</real>
             </point>
             <size id="size">
               <real id="width">120</real>
@@ -1234,7 +1234,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>

@@ -23,16 +23,90 @@
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
+    <behavior id="id862077" class="TimerBehavior" enabled="true">
+      <attributes>
+        <text id="name">Batty Faster</text>
+        <text id="bundleName">Timer.behavior</text>
+        <index id="timerType">1</index>
+        <real id="interval">20</real>
+        <boolean id="runToCompletion">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id557443" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id167426</text>
+            <text id="RHS">3</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id439366" class="TimerBehavior" enabled="true">
+      <attributes>
+        <text id="name">Batty Even Faster</text>
+        <text id="bundleName">Timer.behavior</text>
+        <index id="timerType">1</index>
+        <real id="interval">45</real>
+        <boolean id="runToCompletion">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id409395" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id167426</text>
+            <text id="RHS">2</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id602465" class="TimerBehavior" enabled="true">
+      <attributes>
+        <text id="name">Batty Ultra Fast</text>
+        <text id="bundleName">Timer.behavior</text>
+        <index id="timerType">1</index>
+        <real id="interval">60</real>
+        <boolean id="runToCompletion">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id198877" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id167426</text>
+            <text id="RHS">1</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id473646" class="TimerBehavior" enabled="true">
+      <attributes>
+        <text id="name">The Fastest Batty</text>
+        <text id="bundleName">Timer.behavior</text>
+        <index id="timerType">1</index>
+        <real id="interval">80</real>
+        <boolean id="runToCompletion">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id997254" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id167426</text>
+            <text id="RHS">0.1</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
     <behavior id="id517764" class="TimerBehavior" enabled="true">
       <attributes>
-        <text id="name">Timer</text>
+        <text id="name">Batty Spawner</text>
         <text id="bundleName">Timer.behavior</text>
         <index id="timerType">0</index>
         <real id="interval">
           <expression>
-            <string>(1/</string>
-            <reference keypath="game.attributes.time" />
-            <string>) * 5</string>
+            <reference keypath="game.attributes.id167426" />
           </expression>
         </real>
         <boolean id="runToCompletion">false</boolean>
@@ -45,27 +119,21 @@
             <text id="prototypeKey">id163880</text>
             <angle id="direction">0</angle>
             <index id="directionSpace">0</index>
-            <real id="x">0</real>
-            <real id="y">0</real>
+            <real id="x">
+              <expression>
+                <string>random(-20, 750)</string>
+              </expression>
+            </real>
+            <real id="y">
+              <expression>
+                <string>random(120, 500)</string>
+              </expression>
+            </real>
             <index id="positionSpace">1</index>
             <index id="layerOrder">0</index>
           </attributes>
         </behavior>
       </behaviors>
-    </behavior>
-    <behavior id="id760307" class="ChangeAttributeAction" enabled="true">
-      <attributes>
-        <text id="name">Change Attribute</text>
-        <text id="bundleName">ChangeAttribute.behavior</text>
-        <text id="targetAttribute">game.attributes.id167426</text>
-        <text id="RHS">
-          <expression>
-            <string>(1/</string>
-            <reference keypath="game.attributes.time" />
-            <string>) * 5</string>
-          </expression>
-        </text>
-      </attributes>
     </behavior>
   </behaviors>
   <aspects>
