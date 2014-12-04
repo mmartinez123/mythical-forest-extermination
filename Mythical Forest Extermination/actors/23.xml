@@ -29,11 +29,11 @@
         <text id="bundleName">DisplayText.behavior</text>
         <text id="text">
           <expression>
-            <string />
+            <string>"Health:" + </string>
             <reference keypath="game.attributes.id380415" />
           </expression>
         </text>
-        <text id="font">Courier New</text>
+        <text id="font">Georgia</text>
         <real id="size">30</real>
         <index id="alignment">0</index>
         <boolean id="wrap">false</boolean>

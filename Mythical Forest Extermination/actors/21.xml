@@ -164,10 +164,17 @@
         </condition>
       </conditions>
       <behaviors>
-        <behavior id="id330360" class="DestroyAction" enabled="true">
+        <behavior id="id624003" class="ChangeAttributeAction" enabled="true">
           <attributes>
-            <text id="name">Destroy</text>
-            <text id="bundleName">Destroy.behavior</text>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.id374647</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="self.attributes.id374647" />
+                <string> - 25</string>
+              </expression>
+            </text>
           </attributes>
         </behavior>
       </behaviors>
@@ -198,6 +205,19 @@
           <attributes>
             <text id="name">Destroy</text>
             <text id="bundleName">Destroy.behavior</text>
+          </attributes>
+        </behavior>
+        <behavior id="id465461" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id261902</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id261902" />
+                <string> + 5</string>
+              </expression>
+            </text>
           </attributes>
         </behavior>
       </behaviors>
