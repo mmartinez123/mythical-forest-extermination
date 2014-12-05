@@ -367,7 +367,7 @@
                   <attributes>
                     <text id="name">Change Scene</text>
                     <text id="bundleName">ChangeScene.behavior</text>
-                    <text id="sceneKey">next</text>
+                    <text id="sceneKey">id373228</text>
                     <boolean id="enableAdvertisement">false</boolean>
                   </attributes>
                 </behavior>
@@ -1172,37 +1172,6 @@
             </physics>
           </aspects>
         </actor>
-        <actor id="id625494" prototype="id700072">
-          <attributes>
-            <point id="position">
-              <real id="x">574</real>
-              <real id="y">303</real>
-            </point>
-            <size id="size">
-              <real id="width">120</real>
-              <real id="height">120</real>
-            </size>
-            <angle id="rotation">0</angle>
-            <color id="color">
-              <real id="red">1</real>
-              <real id="green">1</real>
-              <real id="blue">1</real>
-              <real id="alpha">0</real>
-            </color>
-          </attributes>
-          <aspects>
-            <graphics>
-              <attributes>
-                <integer id="tileWidth" name="tileWidth">0</integer>
-                <integer id="tileHeight" name="tileHeight">0</integer>
-              </attributes>
-            </graphics>
-            <motion />
-            <physics>
-              <attributes />
-            </physics>
-          </aspects>
-        </actor>
         <actor id="id935680" prototype="id245306">
           <attributes>
             <point id="position">
@@ -1248,7 +1217,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>

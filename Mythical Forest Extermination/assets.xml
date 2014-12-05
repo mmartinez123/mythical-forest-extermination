@@ -62,6 +62,15 @@
     <image name="Batty">
       <file name="Batty.png" size="424" />
     </image>
+    <image name="Start Over Button">
+      <file name="Start Over Button.png" size="923" />
+    </image>
+    <image name="Main Menu Button">
+      <file name="Main Menu Button.png" size="1151" />
+    </image>
+    <image name="Game OVer">
+      <file name="Game OVer.png" size="1675" />
+    </image>
   </images>
   <behaviors />
 </assets>

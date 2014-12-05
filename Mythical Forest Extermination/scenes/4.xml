@@ -17,6 +17,75 @@
           </attributes>
           <aspects>
             <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id453587" prototype="id247085">
+          <attributes>
+            <point id="position">
+              <real id="x">149.5</real>
+              <real id="y">160</real>
+            </point>
+            <size id="size">
+              <real id="width">219</real>
+              <real id="height">100</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id243457" prototype="id689369">
+          <attributes>
+            <point id="position">
+              <real id="x">582</real>
+              <real id="y">159</real>
+            </point>
+            <size id="size">
+              <real id="width">219</real>
+              <real id="height">100</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id421045" prototype="id769043">
+          <attributes>
+            <point id="position">
+              <real id="x">337.388268156425</real>
+              <real id="y">447.451923076923</real>
+            </point>
+            <size id="size">
+              <real id="width">749.776536312849</real>
+              <real id="height">258.096153846154</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
               <attributes />
             </graphics>
             <motion />
